@@ -1,0 +1,95 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta
+        name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    >
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="style.css">
+    <title>Hogwarts Students</title>
+</head>
+<body id="body">
+        
+    <div id="splash">
+      <h1>List of Hogwarts Students </h1>
+      <a href="#background">
+        <img class="splash-arrow a-up-down overlay" src="images/pil.svg" alt="arrow">
+    </a>
+    </div>
+    <br>
+    <div id="background">
+      <h1 id="listview_h1">Students</h1>
+    <div class="main_content">
+
+                <div id="filter">
+                    <div id="filter_houses">
+                    <button value="all" id="filter_all">All students</button> 
+                    
+                    <button value="gryffindor" id="filter_gryffindor">Gryffindor</button>
+                    <button value="ravenclaw" id="filter_ravenclaw">Ravenclaw</button>
+                    <button value="hufflepuff" id="filter_hufflepuff">Hufflepuff</button>
+                    <button value="slytherin" id="filter_slytherin">Slytherin</button>
+                    <button id="show_expelled_button">Expelled students</button>
+                    <button id="show_squad_button">Squad</button>
+                    <button id="show_prefect_button">Prefects</button>
+                  </div>
+                  
+                  
+                  <div id="sort">
+                    <button value="lastName" id="sort_last_name">Last name A-Z</button>
+                    <button value="firstName" id="sort_first_name">First name A-Z</button>
+                    <button value="house" id="sort_house">House A-Z</button>
+                    </div> 
+                    <br>
+                    <input class="search" id="search_bar" type="search" placeholder="Search student..." />
+                  </div>
+                 
+     </div>
+     
+     
+            
+              
+         <!-- empty section for the list -->
+      
+      <p id="number_of_students"></p>
+      <section id="listview"></section>
+    </div>
+  
+
+  
+
+    <div class="modal_background hide">
+      <div class="modal_content" id="modal_id">
+        <button id="close_modal">x</button>
+        <div class="head">
+          <h1 id="student_expelled"></h1>
+          <h1 id="full_name_modal"></h1>
+          <img id="house_crest_modal" src="" />
+          <img id="student_image_modal" src="" />
+          <div class="info">
+            <h4>Firstname: <span id="first_name_modal"></span></h4>
+            <h4>Lastname: <span id="last_name_modal"></span></h4>
+            <h4>Middlename: <span id="middle_name_modal"></span></h4>
+            <h4>Nickname: <span id="nick_name_modal"></span></h4>
+            <h4>House: <span id="house_modal"></span></h4>
+            <h4>Blood status: <span id="blood_status_modal"></span></h4>
+            <h4 class="prefect"></h4>
+            <h4>Squad: <span id="squad_modal"></span></h4>
+            <h4 class="expelled"></h4>
+          </div>
+
+          <div class="decisions">
+            <button id="expel_button">Expel Student</button>
+            <button id="prefect_button">Make Prefect</button>
+            <button id="squad_button">Add To Squad</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    
+    <script src="script.js"></script>
+</body>
+</html>
