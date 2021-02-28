@@ -2,7 +2,7 @@
 
 
 
-document.addEventListener("DOMContentLoaded", start);Æ
+document.addEventListener("DOMContentLoaded", start);
 
 
 
