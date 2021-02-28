@@ -117,19 +117,19 @@ function displayPopup(student){
   
   switch(studentHouse){
        case "Gryffindor":
-          houseCrest = "/images/gryffindor.png";
+          houseCrest = "images/gryffindor.png";
           modalId.classList.add("gryffindor_background_modal");
           break;
         case "Hufflepuff":
-            houseCrest = "/images/hufflepuff.png";
+            houseCrest = "images/hufflepuff.png";
             modalId.classList.add("hufflepuff_background_modal");
             break;
         case "Slytherin":
-            houseCrest = "/images/slytherin.png";
+            houseCrest = "images/slytherin.png";
             modalId.classList.add("slytherin_background_modal");
             break;
         case "Ravenclaw":
-            houseCrest = "/images/ravenclaw.png";
+            houseCrest = "images/ravenclaw.png";
             modalId.classList.add("ravenclaw_background_modal");
             break;
         default:
@@ -205,16 +205,16 @@ function createStudents(){
         studentGender = studentGender.charAt(0).toUpperCase() + studentGender.slice(1).toLowerCase();
         let studentHouse = s.house.trim();
         studentHouse = studentHouse.charAt(0).toUpperCase() + studentHouse.slice(1).toLowerCase();
-        let pictureLink = "/studentspictures/silhouette.png";
+        let pictureLink = "studentspictures/silhouette.png";
         if(firstName === "Justin" || firstName === "Leanne"){
            
         } else {
             if(firstName === "Padma" || firstName === "Parvati"){
                 const pictureLinkString = lastName.toLowerCase() + "_" + firstName.toLowerCase();
-                pictureLink = "/studentspictures/" + pictureLinkString + ".png";
+                pictureLink = "studentspictures/" + pictureLinkString + ".png";
             } else {
                 const pictureLinkString = lastName.toLowerCase() + "_" + firstName.charAt(0).toLowerCase();
-                pictureLink = "/studentspictures/" + pictureLinkString + ".png";
+                pictureLink = "studentspictures/" + pictureLinkString + ".png";
             }
            
         }
@@ -422,7 +422,7 @@ function hackedStudent(){
     student.lastName = "Ziegler";
     student.nickName = '"Slayer of Mudbloods"';
     student.house = "Slytherin";
-    student.pictureLink = "/studentspictures/ziegler_s.jpg";
+    student.pictureLink = "studentspictures/ziegler_s.jpg";
     student.bloodType = "Pure-Blood";
 studentArray.unshift(student);
 }

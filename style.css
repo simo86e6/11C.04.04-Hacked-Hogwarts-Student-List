@@ -7,7 +7,7 @@
 
 @font-face {
   font-family: "harrypotter";
-  src: url(/fonts/parry-hotter.regular.ttf);
+  src: url(fonts/parry-hotter.regular.ttf);
 }
 
 .a-up-down {
@@ -70,7 +70,7 @@
 #splash {
   height: 100vh;
   width: 100%;
-  background: url("/images/AdobeStock_339549401.jpeg") center center fixed;
+  background: url("images/adobeStock_339549401.jpeg") center center fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -112,7 +112,7 @@
 /****Background****/
 
 #background {
-  background: url("/images/cobro-mEr7U5yfYt8-unsplash.jpg") no-repeat center center fixed;
+  background: url("images/cobro-mEr7U5yfYt8-unsplash.jpg") no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
